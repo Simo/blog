@@ -1,0 +1,8 @@
+#!/bin/sh
+USER=bierti
+HOST=138.201.252.61             
+DIR=www/sbierti/
+
+hugo && rsync -avz --delete public/ unbit:~/${DIR}
+
+exit 0
